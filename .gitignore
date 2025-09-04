@@ -1,0 +1,32 @@
+# Node
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+.Python
+*.sqlite3
+
+# Docker
+*.log
+*.env
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 前端模板文件
+a-shelf-of-stories-css-grid-comic-gallery/
