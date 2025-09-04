@@ -1,3 +1,8 @@
 FROM nginx:alpine
-COPY dist/ /usr/share/nginx/html
-EXPOSE 80
+
+# 拷贝我们自己的 Nginx 配置
+COPY nginx/default.conf /etc/nginx/conf.d/
+
+# 拷贝前端打包文件到 Nginx html 目录
+COPY wallpaper-wall/dist/ /usr/share/nginx/html/
+

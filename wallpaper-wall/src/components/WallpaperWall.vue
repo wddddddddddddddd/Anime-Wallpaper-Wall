@@ -22,7 +22,7 @@ const sections = ref([])
 
 const baseURL = import.meta.env.DEV
   ? "http://127.0.0.1:8000"
-  : "http://8.155.166.199:8000";
+  : "/api";
 
 onMounted(async () => {
   try {

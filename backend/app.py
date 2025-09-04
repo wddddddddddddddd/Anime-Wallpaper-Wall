@@ -18,8 +18,9 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/wallpapers")
 def get_wallpapers():
-    base_url = "http://127.0.0.1:8000/static"  # 本地测试
+    # base_url = "http://127.0.0.1:8000/static"  # 本地测试
     # 部署到服务器后改成服务器 IP 或域名，例如 http://yourdomain.com/static
+    base_url = "/static"  # 部署到服务器后用公网 IP
     return [
         {
             "title": "Reading",
